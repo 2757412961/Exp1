@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -29,6 +30,7 @@ class ViewController: UIViewController {
 
     @IBAction func touchCard(_ sender: UIButton) {
         flipCount += 1
+        
 //        flipCountLabel.text = "FlipCount：\(flipCount)"
         if let cardNumber = cardButtons.firstIndex(of: sender){
             flipCard(withEmoji: emojiChoices[cardNumber], on: sender)
